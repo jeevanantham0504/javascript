@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(){
+        var a = parseInt(document.getElementById("tb1").value);
+        var b = parseInt(document.getElementById("tb2").value);
+            var c = a+b;
+            document.getElementById("tb3").value=c;
+        }
+        function sub(){
+        var a = parseInt(document.getElementById("tb1").value);
+        var b = parseInt(document.getElementById("tb2").value);
+            var c = a-b;
+            document.getElementById("tb3").value=c;
+        }
+        function div(){
+        var a = parseInt(document.getElementById("tb1").value);
+        var b = parseInt(document.getElementById("tb2").value);
+            var c = a/b;
+            document.getElementById("tb3").value=c;
+        }
+        function mul(){
+        var a = parseInt(document.getElementById("tb1").value);
+        var b = parseInt(document.getElementById("tb2").value);
+            var c = a*b;
+            document.getElementById("tb3").value=c;
+        }
+    </script>
+</head>
+<body>
+    enter the first value:<input type="text" id="tb1"><br><br>
+    enter the second value:<input type="text" id="tb2"><br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">subraction</button>
+    <button onclick="div()">division</button>
+    <button onclick="mul()">multiplication</button>
+    
+    RESULT:<input type="text" id="tb3"><br><br>
+    
+</body>
+</html>

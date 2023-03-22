@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primenumbers</title>
+    <script>
+        function prime(){
+            var b=0;
+            var a = parseInt(document.getElementById("tb1").value);
+            for(i=1;i<=a;i++)
+  {
+     
+     for(j=2;j<i;j++)
+     {
+       if(i%j==0)
+       {
+         b++;
+       }
+     }
+     if(b==0)
+     {
+       document.write(i,"<br>");
+     }
+            // for(i=1;i<=a;i++){
+            //     if(a/1==a&&a/a==1){
+            //     document.write(i);
+            // }
+            // }
+        }}
+    </script>
+</head>
+<body>
+    Enter the number:<input type="text" id="tb1">
+    <button onclick="prime()">Click to generate primenumbers</button>
+    the prime numbers are:<input type="text" id="tb2">
+</body>
+</html>
