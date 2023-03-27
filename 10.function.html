@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+    <script>
+        //without using parameter
+        function greetuser(){
+            //code statement
+            greet = "welcome to javascript";
+            console.log(greet);
+        }
+        greetuser()//here we are calling the function
+
+        //using parameter
+        function add(/*this is parameter*/a,b){
+            console.log(a+b);
+        }
+        add(/*this is argument*/3,5)//i.e we are passing values to a and b as 3 and 5
+
+        function sub(a , b){
+            result = a-b;
+           return console.log(result);//return is just returning the values
+        }
+        sub(10,8)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

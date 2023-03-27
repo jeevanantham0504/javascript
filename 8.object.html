@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    
+</head>
+<body>
+    
+
+    <script>//we are creating an object and storing it in a variable named person
+        let person = {
+            firstname:"Jeevanantham",
+            lastname:"Rangaraj",
+            age:20,
+            address:"Coimbatore , Tamilnadu , India",
+            //next we are creating a object inside an object
+            siblings:{
+                brother:"karthi",
+                sister:"karthikaa"
+            }
+        
+        }//dot notation
+        console.log(person.address);
+        console.log(person.firstname);
+        console.log(person.siblings);
+        console.log(person.siblings.sister);
+        //bracket notation
+        console.log(person['address']);
+    </script>
+</body>
+</html>
